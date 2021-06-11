@@ -1,0 +1,62 @@
+body {
+  background-color: #626365;
+}
+.header {
+  height: 4.5rem;
+  background: #0A0A13;
+}
+.header-content button {
+  background: #E13A1D;
+  border: none;
+}
+.header-content__logo img {
+  padding-top: 0.5rem;
+  width: 9rem;
+}
+.header-content__nav nav {
+  display: inline-block;
+}
+.header-content__phone a {
+  display: block;
+}
+.main {
+  height: 22em;
+  background: red;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.categories {
+  text-align: center;
+  background-color: green;
+}
+.categories__title {
+  text-align: center;
+}
+.categories__item {
+  display: inline ;
+  color: white;
+  margin-bottom: 5rem;
+  background-color: blue;
+  height: 10rem;
+  width: 15rem !important;
+}
+.motivac {
+  height: 20em;
+  background-color: pink;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.motivac___text p {
+  font-size: 50px;
+}
+.footer {
+  background-color: #471803;
+  height: 5em;
+}
+.footer h3 {
+  padding-top: 1rem;
+  text-align: center;
+  color: #fff;
+}
