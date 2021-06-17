@@ -1,42 +1,74 @@
+@bg-color:#0F132A;
+@btn-color:#EB691B;
+@light:#fff;
+@nav-color:#9AACC5;
+@icon-color:#D6E8FF;
 *{
+	color:@light;
+}
+nav{
+	a{
+	color:@nav-color;
+	
+	}
+}
 
-}
-body{
-	background-color:#626365;
-}
 .header{
+	
 	height: 4.5rem;
-	background:#0A0A13;
+	background:@bg-color;
 	&-content{
 			
 		button{
-			background:#E13A1D; 
-			border:none;
+			margin-top: 1rem;
+			background: transparent	;	 
+			border:1px solid @icon-color;
+			border-radius: 100rem;	
+
+			i{
+				color:#D6E8FF;
+			}
+
 		}
+		&__find{
+			font-size: 1em ;	
+			button{
+				height: 2rem;
+				width: 2rem;	
+				i{
+					color:#D6E8FF;
+				}
+			}
+		}
+
 		&__logo{
 			img{
-				padding-top: 0.5rem;
+				margin-top: 0.5rem;
 				width:9rem;
 			}		
 		}
 		&__nav{
+
 			nav{
+				margin-top: 1.3rem;
 				display: inline-block;	
 			}
 		}
 		&__phone{
 			a{
+				margin-top: 0.4rem;
 				display:block;
 			}
 		}
 	}
 }
 .main{
+	color:@light;
 	height:22em;
-	background:red;
 	justify-content: center;
 	display: flex;
 	align-items:center;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/main.jpg) top no-repeat;
 	&-text{
 
 	}
@@ -45,41 +77,187 @@ body{
 	}
 }
 .categories{
+
 	text-align: center;
-	background-color: green;
+	background-color:@bg-color;
 	&__title{
-		text-align: center;
+		margin:3rem 0 !important;
 	}
+
 	&__item{ 
-		display: inline ;
+		border-radius: 1em;
+		margin: 0 auto;
 		color:white;
 		margin-bottom: 5rem;
-		background-color: blue;
-		height: 10rem;
-		width: 15rem !important;
-	}
+	    height: 13rem;
+		width: 18rem;
+		justify-content: center;
+		display: flex;
+		align-items:center;		
+	}	
+		.sushi{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/sushi.jpg) center no-repeat;
+			background-size: cover;	
+
+		}
+		.rolli{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/rolli.jpg) center no-repeat;
+			background-size: cover;	
+
+		}
+		.burger{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/burger.jpg) center no-repeat;
+			background-size: cover;	
+
+		}
+		.pizza{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/pizza.jpg) center no-repeat;
+			background-size: cover;	
+
+		}
+		.gorblud{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/bluda.jpg) center no-repeat ;
+			background-size: cover;	
+
+		}
+		.zakuzki{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/zakuzki.jpg) center no-repeat ;
+			background-size: cover;	
+
+		}
+		.deserti{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/deserti.jpg) center no-repeat ;
+			background-size: cover;	
+
+		}
+		.salati{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/salat.jpg) center no-repeat ;
+			background-size: cover;	
+		}
+		.sousi{
+			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/sousi.jpg) center no-repeat ;
+		    background-size: cover;	
+
+		}
+		h2{
+
+		}
 }
 .motivac{
+			background-size: cover;	
 	height: 20em;
-	background-color: pink;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),url(../img/motivac.jpg) center no-repeat;
+	background-size: cover;
 	justify-content: center;
 	display: flex;
+			background-size: cover;	
 	align-items:center;	
 	&__title{
 
 	}
 	&___text{
+			background-size: cover;	
 		p{
 			font-size: 50px;
 		}
 	}
 }
 .footer{
-	background-color:#471803;
+	background-color:#00041B;
 	height: 5em;
 	h3{
 		padding-top: 1rem;
 		text-align: center;
 		color:#fff;
 	}
+}
+
+/*Страница роллов*/
+
+.menunav{
+	background-color:@bg-color;
+	&-cont{
+		height: 3.7rem;
+		border-top:1px solid @nav-color;
+		border-bottom:1px solid @nav-color;
+		nav{
+			padding-top: 0.8em;
+			a{
+
+			color:@nav-color;
+			margin-right: 1.5rem;
+			}		
+		}
+
+		button{
+			margin-top: 0.3em;
+			background: transparent	;	 
+			border:1px solid @icon-color;
+			border-radius: 100rem;	
+			height: 3rem;
+			width: 3rem;
+
+
+			i{
+				color:#D6E8FF;
+			}
+
+		}	
+	}
+}
+
+.menu{
+	padding: 0.8rem 0;
+	background-color: @bg-color	;
+	&__mininav{
+		padding-top: 1rem;
+		height: 4rem;
+		a{
+			margin-right:1.2rem;
+		}
+	}
+	&__title{
+		text-align: center;
+		padding-bottom: 2rem;
+	}
+	&__item{
+		margin: 0 auto;
+		text-align: center;
+		border-radius: 0.95em;
+		width: 344px ;
+		height: 455px;
+		background-color:#642C8A ;
+	img{
+		border-radius: 0.95em;
+		width: 344px;
+	}
+	h4{
+		text-align: center;
+	}
+	p{
+		font-size: 13px;
+
+	}
+	.menu__footer{
+   		span{
+   			display: inline-block;
+   		}
+   		.weight{
+
+   		}
+   		.price{
+   			text-align: center ;
+   			font-size: 24px;
+   			font-weight: bold;
+   			margin-right: 50px;
+   			display: inline-block;
+   		}
+   		button{
+   			text-align: center;
+   			display: block;
+   			margin: 0 auto;
+   		}
+	}
+	}
+
 }

@@ -1,62 +1,201 @@
-body {
-  background-color: #626365;
+* {
+  color: #ffffff;
+}
+nav a {
+  color: #9aacc5;
 }
 .header {
   height: 4.5rem;
-  background: #0A0A13;
+  background: #0f132a;
 }
 .header-content button {
-  background: #E13A1D;
-  border: none;
+  margin-top: 1rem;
+  background: transparent	;
+  border: 1px solid #d6e8ff;
+  border-radius: 100rem;
+}
+.header-content button i {
+  color: #D6E8FF;
+}
+.header-content__find {
+  font-size: 1em ;
+}
+.header-content__find button {
+  height: 2rem;
+  width: 2rem;
+}
+.header-content__find button i {
+  color: #D6E8FF;
 }
 .header-content__logo img {
-  padding-top: 0.5rem;
+  margin-top: 0.5rem;
   width: 9rem;
 }
 .header-content__nav nav {
+  margin-top: 1.3rem;
   display: inline-block;
 }
 .header-content__phone a {
+  margin-top: 0.4rem;
   display: block;
 }
 .main {
+  color: #ffffff;
   height: 22em;
-  background: red;
   justify-content: center;
   display: flex;
   align-items: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/main.jpg) top no-repeat;
 }
 .categories {
   text-align: center;
-  background-color: green;
+  background-color: #0f132a;
 }
 .categories__title {
-  text-align: center;
+  margin: 3rem 0 !important;
 }
 .categories__item {
-  display: inline ;
+  border-radius: 1em;
+  margin: 0 auto;
   color: white;
   margin-bottom: 5rem;
-  background-color: blue;
-  height: 10rem;
-  width: 15rem !important;
-}
-.motivac {
-  height: 20em;
-  background-color: pink;
+  height: 13rem;
+  width: 18rem;
   justify-content: center;
   display: flex;
   align-items: center;
+}
+.categories .sushi {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/sushi.jpg) center no-repeat;
+  background-size: cover;
+}
+.categories .rolli {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/rolli.jpg) center no-repeat;
+  background-size: cover;
+}
+.categories .burger {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/burger.jpg) center no-repeat;
+  background-size: cover;
+}
+.categories .pizza {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/pizza.jpg) center no-repeat;
+  background-size: cover;
+}
+.categories .gorblud {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bluda.jpg) center no-repeat;
+  background-size: cover;
+}
+.categories .zakuzki {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/zakuzki.jpg) center no-repeat;
+  background-size: cover;
+}
+.categories .deserti {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/deserti.jpg) center no-repeat;
+  background-size: cover;
+}
+.categories .salati {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/salat.jpg) center no-repeat;
+  background-size: cover;
+}
+.categories .sousi {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/sousi.jpg) center no-repeat;
+  background-size: cover;
+}
+.motivac {
+  height: 20em;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/motivac.jpg) center no-repeat;
+  justify-content: center;
+  display: flex;
+  background-size: cover;
+  align-items: center;
+}
+.motivac___text {
+  background-size: cover;
 }
 .motivac___text p {
   font-size: 50px;
 }
 .footer {
-  background-color: #471803;
+  background-color: #00041B;
   height: 5em;
 }
 .footer h3 {
   padding-top: 1rem;
   text-align: center;
   color: #fff;
+}
+/*Страница роллов*/
+.menunav {
+  background-color: #0f132a;
+}
+.menunav-cont {
+  height: 3.7rem;
+  border-top: 1px solid #9aacc5;
+  border-bottom: 1px solid #9aacc5;
+}
+.menunav-cont nav {
+  padding-top: 0.8em;
+}
+.menunav-cont nav a {
+  color: #9aacc5;
+  margin-right: 1.5rem;
+}
+.menunav-cont button {
+  margin-top: 0.3em;
+  background: transparent	;
+  border: 1px solid #d6e8ff;
+  border-radius: 100rem;
+  height: 3rem;
+  width: 3rem;
+}
+.menunav-cont button i {
+  color: #D6E8FF;
+}
+.menu {
+  padding: 0.8rem 0;
+  background-color: #0f132a;
+}
+.menu__mininav {
+  padding-top: 1rem;
+  height: 4rem;
+}
+.menu__mininav a {
+  margin-right: 1.2rem;
+}
+.menu__title {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.menu__item {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0.95em;
+  width: 344px ;
+  height: 455px;
+  background-color: #642C8A ;
+}
+.menu__item img {
+  border-radius: 0.95em;
+  width: 344px;
+}
+.menu__item h4 {
+  text-align: center;
+}
+.menu__item p {
+  font-size: 13px;
+}
+.menu__item .menu__footer span {
+  display: inline-block;
+}
+.menu__item .menu__footer .price {
+  text-align: center ;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 50px;
+  display: inline-block;
+}
+.menu__item .menu__footer button {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
