@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<title>Сушилайк</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">	
 	<link rel="stylesheet" href="css/style.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="icon" href="img/title.png" >
@@ -12,28 +14,40 @@
  	sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+
 	<header class="header">
 		<div class="container">
 			<div class="header-content">
 				<div class="row">
-					<div class="header-content__logo col-lg-2">
-						<a href="#"><img src="img/logo2.png" alt=""></a>
+
+					<div class="header-content__logo col-xl-2 col-xxl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+						<img src="img/logo2.png" alt="">
+
 					</div>
-					<div class="header-content__find col-lg-1 ms-auto">
+						<div class="header-carticon col-">
+								
+								<button class="header-carticon__btn">
+									<i class="fas fa-shopping-basket"></i>
+								</button>					
+						
+						</div>
+					<div class="header-content__find col-lg-1  col-md-1 ">
 						<button class="header-content__findbtn">
-							<i class="fas fa-search"></i>
+							<i class="fas fa-info-circle"></i>
 						</button>
 					</div>
 
-				    <div class="header-content__nav col-lg-3 ms-auto">
+				    <div class="header-content__nav col-lg-4 col-md-4 col-sm-5">
 				    	<nav>
 				    			<a href="">Главная</a>
 				    			<a href="">Меню</a>
 				    			<a href="">Доставка</a>
-				    		</nav>	
+				    	</nav>	
 				    </div>
-		 
-				    <div class="header-content__phone col-lg-3 ms-auto">
+				     <div class="header-content__carticon col-lg-2 col-md-1 ">
+						<img src="img/logo.png" alt="">
+				    </div>				 
+				    <div class="header-content__phone col-lg-3 col-md-3 col-sm-3">
 
 				    			<a href="">+7 927 233-39-36</a>
 				    			<a href="">+7 927 233-39-36</a>
@@ -44,21 +58,19 @@
 			</div>
 		</div>
 	</header>
-
 	<section class="menunav">
 		<div class="container">
 			<div class="row menunav-cont">
 				<div class="menunav-nav col-lg-9">
 					
 						<nav class="">
-							<a href="">Пицца</a>
-							<a href="">Роллы</a>
-							<a href="">Суши</a>
+							
+							<a href="">Роллы и суши</a>
 							<a href="">Сеты</a>
 							<a href="">Бургеры</a>
-							<a href="">Закуски</a>
+							<a href="">Пицца</a>
 							<a href="">Вторые блюда</a>
-							<a href="">Супы и салаты</a>
+							<a href="">Закуски и буррито</a>
 							<a href="">Соусы</a>
 						</nav>	
 					
@@ -118,7 +130,7 @@
 						<p>, сыр Моцарелла, лук красный, грибы шампиньоны, перец болгарский, томаты, маслины, базиликовый соус, кукуруза, фасоль стручковая, орегано, зелень.</p>
 						<div class="menu__footer">
 							<span class="weight">320 гр</span>
-							<span class="price">299 <i class="fas fa-shopping-basket"></i> <span class="r">R</span></span>
+							<span class="price">299<span class="r">R</span></span>
 							<button>Добавить в корзину</button>						
 						</div>
 					</div>
