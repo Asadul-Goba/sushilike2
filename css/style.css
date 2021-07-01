@@ -316,7 +316,7 @@ nav a {
   display: inline-block;
 }
 .menu__item .menu__footer .price span.r {
-  font-family: 'currency' !important;
+  font-size: 24px;
 }
 .menu__item .menu__footer button {
   height: 36px;
