@@ -9,6 +9,9 @@
  	font-family: "Roboto Condensed", sans-serif;
 	color:@light;
 }
+/*.infomob{
+	display: none;	
+}*/
 nav{
 	a{
 	color:@nav-color;
@@ -56,18 +59,18 @@ nav{
 		&__nav{
 
 			nav{
-
 				margin-top: 1.3rem;
+				padding-left: 5rem;
 				display: inline-block;	
 				a{
 					padding-right: 0.6rem;
+					font-size: 16px;
 				}
 			}
 		}
 		&__carticon{
 			img{
 				padding-top: 5px;
-				float: right;
 				margin-right: 1rem;
 				height: 4rem;
 			}
@@ -75,13 +78,19 @@ nav{
 		&__phone{
 			float: right;
 			a{	
+				font-size: 16px;
 			 	outline:none;
 				margin-top: 0.4rem;
 				display:block;
 				color: #FF8739;
 			}
 		}
+	.header-carticon{
+		text-align: right;	
+	}
 	.header-carticon__btn{
+		margin-top: 12px;
+
 		background: transparent	;	 
 		border:1px solid @icon-color;
 		border-radius: 100rem;	
@@ -140,8 +149,22 @@ nav{
 		width: 18rem;
 		justify-content: center;
 		display: flex;
-		align-items:center;		
+		align-items:center;
+		transition: transform 10s linear;
+		
 	}	
+	&__item:hover{ 
+		border-radius: 1em;
+		margin: 0 auto;
+		color:white;
+		margin-bottom: 4rem;
+	    height: 14rem;
+		width: 19rem;
+		justify-content: center;
+		display: flex;
+		align-items:center;	
+
+	}
 		.sushi{
 			background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/sushi.jpg) center no-repeat;
 			background-size: cover;	
@@ -186,6 +209,8 @@ nav{
 		    background-size: cover;	
 
 		}
+
+
 		h2{
 
 		}
@@ -211,7 +236,7 @@ nav{
 }
 .info{
 	padding-top: 3em;
-	height: 32rem;
+	height: 26rem;
 	background-color: @bg-color;
 	text-align: center;
 	&-comp{
@@ -242,15 +267,22 @@ nav{
 
 
 }
-.footer{
-	background-color:#00041B;
-	height: 5em;
-	h3{
-		padding-top: 1rem;
+.accordion{
+	button{
+		background-color:#02061D;
+		color: #FFF;
 		text-align: center;
-		color:#fff;
+	}
+	&-button:not(.collapsed) {
+	background-color:#02061D !important;
+	color: #FFF !important;
+	}
+	&-body{
+		background-color:#02061D;
+
 	}
 }
+
 
 /*Страница роллов*/
 
@@ -316,6 +348,7 @@ nav{
 		height: 455px;
 		background-color:transparent;
 		border: 1px solid #4B4F56;
+		margin-bottom: 1.5rem;
 		img{
 			border-radius: 0.95em;
 			width: 344px;
@@ -340,16 +373,19 @@ nav{
 			bottom:10px;
 			padding:0 10px;
 	   		span{
+	   			color: #E1E8F2;
 	   			display: inline-block;
 	   		}
 	   		.weight{
+	   			color: #E1E8F2;
 	   			font-size: 15px;
 
 	   		}
 	   		.price{
+	   			color: #E1E8F2;
 	   			text-align: center ;
 	   			font-size: 24px;
-	   			margin-right: 45px;
+	   			margin-right: 21px;
 	   			display: inline-block;
 	   			span.r{
 	   				font-family: 'currency' !important;
@@ -361,6 +397,7 @@ nav{
 	   			background: transparent;
 	   			border:2px solid @btn-color;
 	   			border-radius: 0.8rem;
+	   			color: #E1E8F2;
 	   			text-align: center;
 	   			display: block;
 	   			margin: 0 auto;
@@ -375,6 +412,44 @@ nav{
 	}
 
 }
+.footer{
+ 	background-color:#00041B;
+ 	height: 4rem;
+ 	color: #fff;
+ 	&__name{
+
+ 		h6{
+ 			color: #AFAFAF;
+
+ 			padding-top: 8px;
+ 			font-weight: 300;
+
+ 		}
+		span{
+			color: #AFAFAF;
+
+			display: inline-block;
+			font-weight: 300;
+
+
+		}
+ 	}
+ 	&__tel{
+ 		text-align: center;
+ 		a{
+ 			color: #AFAFAF;
+ 			padding-top: 0.6rem;
+ 			display: block;
+ 			font-size: 1.2rem;
+ 			text-decoration: none;
+
+ 		}
+ 		span{
+ 			color:#FF8739;
+ 		}
+
+ 	}
+ }
 @media(max-width:992px){
 	.header{
 		&-content{
@@ -383,6 +458,12 @@ nav{
 					margin:0;
 				}	
 			}
+			&__nav{
+			nav{
+				padding-left: 0rem;
+
+			}
+		}
 		}
 	}
 
@@ -401,6 +482,11 @@ nav{
 				
 			}
 		}
+	}
+}
+@media(min-width:768px){
+	.accordion{
+		display: none;
 	}
 }
 @media(max-width:768px){
@@ -423,15 +509,21 @@ nav{
 			}
 		}
 	}
+	.info{
+		display: none;
+		
+	}
 }
 @media(min-width:576px){
 	.header-carticon{
 		display: none;
 	}
+	
 }
 
 @media(max-width:576px){
 	.header{
+		position: relative;	
 		&-content{
 			&__phone{
 				display: none;
@@ -440,12 +532,14 @@ nav{
 				display: none;
 			}
 			&__logo{
-				display: inline  !important;
-				text-align: center;
+				position: absolute;	
+				left: 25%;	
 		 	}
 		 	.header-carticon{
-				display: inline !important;
-				float:right;		 	}
+		 		position:absolute;	
+		 		right: 3%;	
+
+		 	}
 		}
 	}
 	.main{

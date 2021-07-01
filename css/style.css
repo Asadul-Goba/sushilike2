@@ -2,6 +2,9 @@
   font-family: "Roboto Condensed", sans-serif;
   color: #ffffff;
 }
+/*.infomob{
+	display: none;	
+}*/
 nav a {
   color: #9aacc5;
 }
@@ -37,14 +40,15 @@ nav a {
 }
 .header-content__nav nav {
   margin-top: 1.3rem;
+  padding-left: 5rem;
   display: inline-block;
 }
 .header-content__nav nav a {
   padding-right: 0.6rem;
+  font-size: 16px;
 }
 .header-content__carticon img {
   padding-top: 5px;
-  float: right;
   margin-right: 1rem;
   height: 4rem;
 }
@@ -52,12 +56,17 @@ nav a {
   float: right;
 }
 .header-content__phone a {
+  font-size: 16px;
   outline: none;
   margin-top: 0.4rem;
   display: block;
   color: #FF8739;
 }
+.header-content .header-carticon {
+  text-align: right;
+}
 .header-content .header-carticon__btn {
+  margin-top: 12px;
   background: transparent	;
   border: 1px solid #d6e8ff;
   border-radius: 100rem;
@@ -108,6 +117,18 @@ nav a {
   margin-bottom: 5rem;
   height: 13rem;
   width: 18rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: transform 10s linear;
+}
+.categories__item:hover {
+  border-radius: 1em;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 4rem;
+  height: 14rem;
+  width: 19rem;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -164,7 +185,7 @@ nav a {
 }
 .info {
   padding-top: 3em;
-  height: 32rem;
+  height: 26rem;
   background-color: #0f132a;
   text-align: center;
 }
@@ -186,14 +207,17 @@ nav a {
 .info-dost p {
   text-align: left;
 }
-.footer {
-  background-color: #00041B;
-  height: 5em;
-}
-.footer h3 {
-  padding-top: 1rem;
+.accordion button {
+  background-color: #02061D;
+  color: #FFF;
   text-align: center;
-  color: #fff;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #02061D !important;
+  color: #FFF !important;
+}
+.accordion-body {
+  background-color: #02061D;
 }
 /*Страница роллов*/
 .menunav {
@@ -252,6 +276,7 @@ nav a {
   height: 455px;
   background-color: transparent;
   border: 1px solid #4B4F56;
+  margin-bottom: 1.5rem;
 }
 .menu__item img {
   border-radius: 0.95em;
@@ -276,15 +301,18 @@ nav a {
   padding: 0 10px;
 }
 .menu__item .menu__footer span {
+  color: #E1E8F2;
   display: inline-block;
 }
 .menu__item .menu__footer .weight {
+  color: #E1E8F2;
   font-size: 15px;
 }
 .menu__item .menu__footer .price {
+  color: #E1E8F2;
   text-align: center ;
   font-size: 24px;
-  margin-right: 45px;
+  margin-right: 21px;
   display: inline-block;
 }
 .menu__item .menu__footer .price span.r {
@@ -296,6 +324,7 @@ nav a {
   background: transparent;
   border: 2px solid #eb691b;
   border-radius: 0.8rem;
+  color: #E1E8F2;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -304,9 +333,40 @@ nav a {
   border: none;
   background: #eb691b;
 }
+.footer {
+  background-color: #00041B;
+  height: 4rem;
+  color: #fff;
+}
+.footer__name h6 {
+  color: #AFAFAF;
+  padding-top: 8px;
+  font-weight: 300;
+}
+.footer__name span {
+  color: #AFAFAF;
+  display: inline-block;
+  font-weight: 300;
+}
+.footer__tel {
+  text-align: center;
+}
+.footer__tel a {
+  color: #AFAFAF;
+  padding-top: 0.6rem;
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.footer__tel span {
+  color: #FF8739;
+}
 @media (max-width: 992px) {
   .header-content__carticon img {
     margin: 0;
+  }
+  .header-content__nav nav {
+    padding-left: 0rem;
   }
 }
 @media (max-width: 800px) {
@@ -317,6 +377,11 @@ nav a {
     margin: 0;
   }
 }
+@media (min-width: 768px) {
+  .accordion {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .header-content__carticon {
     display: none;
@@ -325,6 +390,9 @@ nav a {
     font-size: 2.5rem;
     margin-top: 1rem;
   }
+  .info {
+    display: none;
+  }
 }
 @media (min-width: 576px) {
   .header-carticon {
@@ -332,6 +400,9 @@ nav a {
   }
 }
 @media (max-width: 576px) {
+  .header {
+    position: relative;
+  }
   .header-content__phone {
     display: none;
   }
@@ -339,12 +410,12 @@ nav a {
     display: none;
   }
   .header-content__logo {
-    display: inline  !important;
-    text-align: center;
+    position: absolute;
+    left: 25%;
   }
   .header-content .header-carticon {
-    display: inline !important;
-    float: right;
+    position: absolute;
+    right: 3%;
   }
   .main {
     height: 25em;
